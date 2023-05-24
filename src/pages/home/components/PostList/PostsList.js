@@ -1,5 +1,5 @@
 import React from 'react';
-import {postContext} from "../../../context/PostContext";
+import {postContext} from "../../../../context/PostContext";
 import {ListGroup} from "react-bootstrap";
 import {PostListItem} from "../PostListItem/PostListItem";
 

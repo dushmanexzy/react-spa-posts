@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Card, Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import {capitalizeText} from "../../../utils/capitalizeText";
+import {capitalizeText} from "../../../../utils/capitalizeText";
 
 import './postlistitem.css';
 
