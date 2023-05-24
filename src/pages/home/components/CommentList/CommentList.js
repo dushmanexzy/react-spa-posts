@@ -1,8 +1,8 @@
 import React from 'react';
 import {useCommentData} from "../../../../hooks/useCommentData";
+import {CommentListItem} from "../CommentListItem/CommentListItem";
 
 import "./commentlist.css";
-import {CommentListItem} from "../CommentListItem/CommentListItem";
 
 export function CommentList({postId}) {
   const comments = useCommentData(postId);
