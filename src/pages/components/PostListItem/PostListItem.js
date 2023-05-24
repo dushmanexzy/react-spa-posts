@@ -1,9 +1,9 @@
 import React from 'react';
 import {Button, Card, Image} from "react-bootstrap";
-
-import './postlistitem.css';
 import {Link} from "react-router-dom";
 import {capitalizeText} from "../../../utils/capitalizeText";
+
+import './postlistitem.css';
 
 export function PostListItem({post}) {
   const {id, userId, title, body} = post;
@@ -20,7 +20,9 @@ export function PostListItem({post}) {
           <Card.Title className={`post-title`}>{capitalizeText(title)}</Card.Title>
           <Card.Text className={`post-text`}>{capitalizeText(body)}</Card.Text>
 
-          {/*<Comments />*/}
+          <div className={`comments`}>
+            Комментарии
+          </div>
         </Card.Body>
         <Button className={`primary post-text`}>Комментарии</Button>
       </Card>
