@@ -5,13 +5,15 @@ export function useCommentData(postId) {
   const [comments, setComments] = React.useState([]);
 
   React.useEffect(() => {
-    axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
-      .then(resp => {
-        const data = resp.data;
+    setTimeout(() => {
+      axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
+        .then(resp => {
+          const data = resp.data;
 
-        setComments(data)
-      })
-      .catch(err => console.log(err))
+          setComments(data)
+        })
+        .catch(err => console.log(err))
+    }, 500)
   }, [postId])
 
   return [comments]
