@@ -1,0 +1,16 @@
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px #dad8d8 solid;
+  padding: 1rem;
+}
+
+.comments-list-title {
+  margin-bottom: 1rem;
+}
+
+.comments-list p {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,13 @@
+.comment:not(:last-child) {
+  border-bottom: 1px #d3d3d3 solid;
+  margin-bottom: 0.5rem;
+}
+.comment-email {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.comment-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
