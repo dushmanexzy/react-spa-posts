@@ -13,3 +13,26 @@
 .burger-icon:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.search-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}

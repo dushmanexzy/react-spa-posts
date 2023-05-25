@@ -1,5 +1,6 @@
 import React from 'react';
 import {Burger} from "../Icons/Burger";
+import {Search} from "./Search";
 
 import './header.css';
 
@@ -8,7 +9,8 @@ export function Header() {
     <header className="header">
       <div className="header-container">
         <Burger/>
-        <input type="search" className="search"/>
+
+        <Search />
       </div>
     </header>
   );
